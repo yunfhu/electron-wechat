@@ -1,5 +1,7 @@
 # electron-wechat
-致力于打造macOS和Linux桌面下最好用的微信（wechat）客户端。
+这个项目是从使用[Electron-wechat](https://github.com/eNkru/electron-wechat) fork 而来
+因为原版的图标在ubuntu dashboard 显示不正常，只是修复了下这个bug 
+
 使用[Electron](https://electron.atom.io)构建。
 
 正常模式
