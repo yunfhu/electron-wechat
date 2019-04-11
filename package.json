@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron src/main.js",
     "pack": "electron-builder --dir",
-    "dist:linux": "electron-builder --linux AppImage",
+    "dist:linux": "electron-builder --linux deb",
     "dist:macOS": "electron-builder --mac",
     "postinstall": "electron-builder install-app-deps",
     "publish": "build -p always"
@@ -24,15 +24,15 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^4.0.0",
-    "electron-builder": "^20.14.7"
+    "electron-builder": "^20.39.0"
   },
   "build": {
     "appId": "nz.co.enkru.${name}",
     "linux": {
       "category": "Network;Utility",
       "desktop": {
-	      "StartupWMClass": "freechat"
-	    },
+        "StartupWMClass": "freechat"
+      },
       "target": [
         "AppImage",
         "deb"
